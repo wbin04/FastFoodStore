@@ -1,0 +1,78 @@
+
+::-webkit-scrollbar {
+    width: 1vw;    
+    /* height: 12px;  */
+}
+
+.form_detail::-webkit-scrollbar, .bill_listProd::-webkit-scrollbar {
+    width: 10px;    
+    /* height: 12px;  */
+}
+
+/* ::-webkit-scrollbar-button:single-button {
+    background-color: #ff7d01;
+    display: block;
+    height: 10px;
+    width: 10px;
+} */
+
+::-webkit-scrollbar-button:single-button:vertical:decrement {
+    display: block;
+    background: #f9e1cc url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="black" d="M160 128c8.188 0 16.38 3.125 22.62 9.375l128 128c12.5 12.5 12.5 32.75 0 45.25s-32.75 12.5-45.25 0L160 202.6 54.63 310.6c-12.5 12.5-32.75 12.5-45.25 0s-12.5-32.75 0-45.25l128-128C143.6 131.1 151.8 128 160 128z"/></svg>') no-repeat center;
+    background-size: contain;
+    cursor: pointer;
+}
+::-webkit-scrollbar-button:single-button:vertical:increment {
+    display: block;
+    background: #f9e1cc url('data:image/svg+xml;charset=UTF-8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 512"><path fill="black" d="M160 384c-8.188 0-16.38-3.125-22.62-9.375l-128-128c-12.5-12.5-12.5-32.75 0-45.25s32.75-12.5 45.25 0L160 309.4l105.4-105.4c12.5-12.5 32.75-12.5 45.25 0s12.5 32.75 0 45.25l-128 128C176.4 380.9 168.2 384 160 384z"/></svg>') no-repeat center;
+    background-size: contain;
+    cursor: pointer;
+}
+
+/* .form_detail::-webkit-scrollbar-button:single-button:vertical:decrement {
+    display: none;
+}
+.form_detail::-webkit-scrollbar-button:single-button:vertical:increment {
+    display: none;
+} */
+
+::-webkit-scrollbar-track {
+    background: #f9e1cc; 
+}
+
+
+::-webkit-scrollbar-thumb {
+    border: 3px solid #f9e1cc;
+    background: #ff7d01; 
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.form_detail::-webkit-scrollbar-thumb, .bill_listProd::-webkit-scrollbar-thumb {
+    border: 1px;
+}
+
+/* ::-webkit-scrollbar-thumb:hover {
+    background: #ff7d01; 
+} */
+
+/* ///////////////////////////////////// */
+
+input[type="checkbox"]{
+    position: relative;
+    cursor: pointer;
+    accent-color: #ff7d01;
+}
+
+/* ///////////////////////////////////// */
+  
+#aa:hover{
+    background-color: #f9e1cc;
+}
+
+/* //////////////////////////////////// */
+
+/* ::selection{
+    color: #000;
+    background-color: #f9e1cc;
+} */

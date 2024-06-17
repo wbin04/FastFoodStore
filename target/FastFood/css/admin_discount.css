@@ -1,0 +1,212 @@
+.managerAddVoucher_form, .managerUpdateVoucher_form{
+    width: 500px;
+    height: 600px;
+    justify-content: space-around;
+}
+
+
+.add_voucher, .filter_voucher{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.add_voucherBtn{
+    /* width: 200px; */
+    padding: 5px 10px;
+    font-size: 1.2em;
+    font-weight: 500;
+    color: #000;
+    background-color: #f9e1cc;
+    border-radius: 10px;
+    border: 2px solid #000;
+    cursor: pointer;
+    animation: 0.3s ease;
+}
+
+.add_voucherBtn i{
+    margin-right: 10px;
+}
+
+.add_voucherBtn:hover{
+    color: #fff;
+    background-color: #ff7d01;
+}
+
+.filter_voucher{
+    flex-direction: row;
+}
+
+.filter_voucher div{
+    margin-right: 10px;
+    font-size: 1.2em;
+}
+
+.voucher_status{
+    font-size: 1.2em;
+}
+
+.desc_voucher{
+    width: 100%;
+    height: 5%;
+    border-bottom: 2px solid rgba(0,0,0,0.1);
+    display: flex;
+    /* align-items: center; */
+}
+
+.id_voucher, .discount_voucher, .startDate_voucher, .endDate_voucher, .minOrder_voucher, .update_voucher, .delete_voucher{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    font-weight: bold;
+    border-right: 2px solid rgba(0,0,0,0.1);
+}
+
+.id_voucher, .update_voucher, .delete_voucher{
+    width: 10%;
+}
+
+.discount_voucher, .minOrder_voucher{
+    width: 20%;
+}
+
+.startDate_voucher, .endDate_voucher{
+    width: 15%;
+}
+
+.list_voucher{
+    padding: 0;
+    /* padding-bottom: 15px; */
+    width: 100%;
+    height: 90%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    /* overflow: auto; */
+}
+
+.voucherItem {
+    /* margin: 20px 0; */
+    width: 100%;
+    height: 50px;
+    display: flex;
+    border: 2px solid rgba(0,0,0,0.1);
+}
+
+.voucherItem .id_voucher, .voucherItem  .discount_voucher, .voucherItem .startDate_voucher, .voucherItem .endDate_voucher, .voucherItem .minOrder_voucher, .voucherItem .delete_voucher{
+    font-weight: 300;
+}
+
+.update_voucher i, .delete_voucher i{
+    cursor: pointer;
+}
+
+.update_voucher i:hover, .delete_voucher i:hover{
+    scale: 1.5;
+    color: #ff7d01;
+}
+
+.footer_voucher{
+    width: 100%;
+    height: 5%;
+}
+
+/* ////////////////////////////////////////////////////////// */
+
+.addVoucherLabel{
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+    font-size: 30px;
+    font-weight: bold;
+    color: #ff7d01;
+}
+
+.addVoucher_container{
+    margin-bottom: 20px;
+    width: 100%;
+    height: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.addVoucher_set{
+	position: relative;
+    padding: 10px 15px;
+    display: flex;
+    width: 90%;
+    align-items: center;
+}
+
+.voucher_label{
+    width: 40%;
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.setVoucher_ID, .setVoucher_discount, .setVoucher_minOrder{
+    outline: none;
+    border: none;
+    border-bottom: 2px solid rgba(0,0,0,0.1);
+    width: 60%;
+    max-height: 110%;
+    font-size: 20px;
+    cursor: text;
+    /* overflow-y: auto;  */
+    resize: vertical;
+}
+
+.voucherVND{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+/* ///////////////////////// */
+
+.datepicker_box{
+    margin-left: 20px;
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: space-around;
+    border-radius: 10px;
+    border: 2px solid rgba(0,0,0,0.1);
+}
+
+.datepicker_showStartDate, .datepicker_showEndDate{
+    /* padding: 20px; */
+    width: 75%;
+    font-size: 1.3em;
+    font-weight: bold;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.pickDate{
+    width: 25%;
+    font-size: 2em;
+    border-left: 2px solid rgba(0,0,0,0.1);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+.pickDate:hover{
+    color: #ff7d01;
+}
+
+.option_upVoucherBtn{
+    display: block;
+}

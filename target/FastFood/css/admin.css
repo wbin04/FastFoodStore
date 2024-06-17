@@ -1,0 +1,339 @@
+*{
+    padding:0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    cursor: default;
+}
+
+#wrapper {
+    height: 100vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.col_opt{
+    height: 100%;
+    width: 20%;
+    border-right: 2px solid rgba(0,0,0,0.1);
+}
+
+.col_info{
+    height: 100%;
+    width: 80%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.admin{
+    width: 100%;
+    height: 10%;
+    padding: 0 20px;
+    font-size: 1.5em;
+    font-weight: bold;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid rgba(0,0,0,0.1) ;
+    color: #fff;
+    background-color: #ff7d01;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.admin i{
+    /* width: 30%; */
+    margin-right: 10px;
+    display: inline-block;
+    font-size: 1.7em;
+}
+
+.manager{
+    width: 100%;
+    height: 80%;
+    border-bottom: 2px solid rgba(0,0,0,0.1) ;
+}
+
+.logout{
+    width: 100%;
+    height: 10%;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    font-weight: 500;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    border-bottom: 2px solid rgba(0,0,0,0.1) ;
+    background-color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.logout i{
+    margin-right: 10px;
+    display: inline-block;
+}
+
+.manager_user, .manager_product, .manager_order, .manager_discount, .manager_rating, .manager_count{
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 20px;
+    font-weight: 500;
+    border-bottom: 2px solid rgba(0,0,0,0.1) ;
+    background-color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.manager_user i, .manager_product i, .manager_order i, .manager_rating i, .manager_count i, .manager_discount i{
+    margin-right: 5px;
+    display: inline-block;
+}
+
+.manager_order .iconDown{
+    display: none;
+}
+
+.adOrder_confirm, .adOrder_deliver, .adOrder_success, .adOrder_cancel{
+    width: 100%;
+    padding: 10px 20px;
+    padding-left: 40px;
+    font-size: 20px;
+    font-weight: 500;
+    border-bottom: 2px solid rgba(0,0,0,0.1) ;
+    background-color: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.adOrder_confirm i, .adOrder_deliver i, .adOrder_success i, .adOrder_cancel i{
+    margin-right: 5px;
+    display: inline-block;
+}
+
+.manager_user:hover, .manager_product:hover, .manager_order:hover, .manager_rating:hover, .manager_count:hover, .manager_discount:hover,
+.adOrder_confirm:hover, .adOrder_deliver:hover, .adOrder_success:hover, .adOrder_cancel:hover,
+.logout:hover{
+    background-color: #f9e1cc;
+}
+
+.manager_orderType{
+    display: none;
+}
+
+.header_form{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    border-bottom: 2px solid rgba(0,0,0,0.1);
+}
+
+.search_bar{
+    /* position: relative; */
+    width: 50%;
+    height: 100%;
+    /* border-bottom: 2px solid rgba(0,0,0,0.1); */
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+}
+
+.search_text, .search_icon{
+    padding: 5px 10px;
+    font-size: 1.2em;
+}
+
+.search_text{
+    width: 200px;
+    border-top-left-radius: 20px;
+    border-bottom-left-radius: 20px;
+    border: 2px solid #000;
+    cursor: text;
+}
+
+.search_icon{
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    border: 2px solid #000;
+    background-color: #f9e1cc   ;
+    cursor: pointer;
+}
+
+.search_icon i{
+    cursor: pointer;
+}
+
+.search_icon:hover{
+    background-color: #ff7d01;
+}
+
+.managerUser_form, 
+.managerProduct_form, 
+.managerOrder_form,
+.managerDiscount_form{
+    width: 90%;
+    height: 90%;
+    display: flex; /*flex*/
+    flex-direction: column;
+    align-items: center;
+    border: 2px solid rgba(0,0,0,0.1);
+}
+
+.managerUserDetail_form, 
+.managerProductDetail_form,
+.managerRating_form,
+.managerAddProduct_form,
+.managerOrderDetail_form,
+.managerAddVoucher_form,
+.managerUpdateVoucher_form
+{
+    border-radius: 20px;
+    border: 2px solid rgba(0,0,0,0.1);
+    width: 750px;
+    height: 450px;
+    display: flex; /*flex*/
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.managerAddVoucher_form{
+    border-radius: 20px;
+    border: 2px solid rgba(0,0,0,0.1);
+    width: 500px;
+    height: 450px;
+    display: flex; /*flex*/
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.managerOrderDetail_form{
+    /* display: flex; */
+    height: 600px;
+}
+
+.managerRating_form{
+    /* display: flex; */
+    height: 500px;
+    width: 900px;
+    flex-direction: row;
+}
+
+.form_detail{
+    width: 100%;
+    height: 95%;
+    overflow-y: auto;
+}
+
+.desc_form{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #fff;
+}
+.back{
+    /* flex: 0.05; */
+    /* border-bottom: 2px solid rgba(0,0,0,0.1); */
+    width: 100%;
+    height: 5%;
+    padding: 10px 20px;
+    font-size: 1em;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+}
+
+.back a{
+    text-decoration: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.back a i{
+    margin-right: 5px;
+    display: inline-block
+}
+
+.back a:hover{
+    color: #ff7d01;
+}
+
+.confirmDelete_user, 
+.confirmAdd_productEmpty, .confirmAdd_product, .confirmDelete_product, .confirmUpdate_product,
+.confirmSuccess_order, .confirmCancel_order{
+    position: fixed;
+    display: none; /*flex*/
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 2000;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.confirmAdd_productEmpty p{
+    text-align: center;
+}
+
+.confirmAlert{
+    width: 350px;
+    height: 200px;
+    border-radius: 20px;
+    background-color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.confirmAlert i{
+    color: #ff7d01;
+    font-size: 2em;
+}
+
+.confirmAlert_label{
+    font-size: 1.1em;
+}
+
+.confirmOpt{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.confirmOptDel_no, .confirmOptDel_yes, .confirmOptEdit_no, .confirmOptEdit_yes{
+    width: 100px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    text-align: center;
+    font-size: 1em;
+    font-weight: 400;
+    color: #000;
+    background-color: #f9e1cc;
+    cursor: pointer;
+}
+
+.confirmOptDel_no:hover, .confirmOptDel_yes:hover, .confirmOptEdit_no:hover, .confirmOptEdit_yes:hover{
+    color: #fff;
+    background-color: #ff7d01;
+}
+
+a{
+	text-decoration: none;
+	color: #000;
+}
+
+a:visited{
+	color: #000;
+}

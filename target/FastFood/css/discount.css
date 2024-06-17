@@ -1,0 +1,138 @@
+.voucher_list{
+    margin-top: 120px;
+    margin-bottom: 20px;
+    width: 100%;
+    /* height: calc(100% - 100px); */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.voucherItem_label{
+    margin-bottom: 10px;
+    font-size: 2em;
+    font-weight: bold;
+    color: #ff7d01;
+}
+
+.voucherItem_label.status_soon{
+    margin-top: 20px;
+    color: #269e46;
+}
+
+.voucherList_type{
+    padding: 0 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.voucher_item{
+    width: 450px;
+    height: 100px;
+    border-radius: 10px;
+    border: 2px dashed #000;
+    display: flex;
+    transition: transform 0.3s ease;
+}
+
+.voucher_icon{
+    height: 100%;
+    width: 25%;
+    /* border-right: 2px solid #000; */
+    background-color: #f9e1cc;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.voucherList_soon .voucher_icon{
+    background-color: #aaf77a;
+}
+
+.voucher_icon i{
+    font-size: 5em;
+}
+
+.voucher_info{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.voucher_num, .voucher_detail{
+    padding-left: 20px;
+}
+
+.voucher_num{
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #ff7d01;
+}
+
+.voucherList_soon .voucher_num{
+    color: #269e46;
+}
+
+.voucher_detail{
+    font-size: 1em;
+}
+
+.voucher_opt{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.voucher_get{
+    padding: 2px 10px;
+    font-size: 1.2em;
+    font-weight: 500;
+    background-color: #f9e1cc;
+    border-radius: 20px;
+    border: 2px solid #000;
+    cursor: pointer;
+    transition: transform 0.3s ease, background-color 0.3s ease, color 0.3s ease;
+}
+
+.voucherList_soon .voucher_get{
+    background-color: #aaf77a;
+}
+
+.voucher_date{
+    font-size: 1em;
+}
+
+.voucher_item:hover {
+    transform: scale(1.05); 
+    background-color: #f9e1cc; 
+}
+
+.voucher_item:hover .voucher_icon {
+    background-color: #ff7d01; 
+}
+
+.voucher_get:hover {
+    transform: scale(1.05); 
+    color: #fff; 
+    background-color: #ff7d01; 
+}
+
+.voucherList_soon .voucher_item:hover {
+    background-color: #aaf77a; 
+}
+
+.voucherList_soon .voucher_item:hover .voucher_icon {
+    background-color: #269e46; 
+}
+
+.voucherList_soon .voucher_get:hover {
+    color: #fff; 
+    background-color: #269e46; 
+}

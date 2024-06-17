@@ -1,0 +1,236 @@
+#wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+#body{
+    position: relative;
+    top: 5vh; 
+    width: 400px;
+    height: 450px;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    background-color: #f9e1cc;
+    border-radius: 10px;
+    border: 2px solid #f9e1cc;
+    box-shadow: 0 0 30px rgba(0,0,0,0.5);
+    transform: translateX(0);
+    transition: height 0.2s ease;
+}
+
+@keyframes formLoginToRegister {
+    to{
+        opacity: 1;
+        transform: translateX(-50%);
+    }
+}
+
+@keyframes formRegisterToLogin {
+    from{
+        opacity: 0;
+        transform: translateX(-50%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes formLoginToReset {
+    to{
+        opacity: 1;
+        transform: translateX(50%);
+    }
+}
+
+@keyframes formResetToLogin {
+    from{
+        opacity: 0;
+        transform: translateX(50%);
+    }
+    to{
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.form{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+#body .form-box{
+    width: 100%;
+    padding: 40px;
+}
+
+#body .login{
+    display: block;
+}
+
+#body .register{
+    position: absolute;
+    display: none;
+    opacity: 0;
+    left: 50%;
+}
+
+#body .reset{
+    position: absolute;
+    display: none;
+    opacity: 0;
+    right: 50%;
+}
+
+.form-box h2{
+    font-size: 2em;
+    color: #000;
+    text-align: center;
+}
+
+.input_box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    border-bottom: 2px solid #000;
+    margin: 20px 0;
+}
+
+.input_box label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #000;
+    font-weight: 500;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.input_box input:focus + label, 
+.input_box input:valid + label{
+    top: -1px;
+}
+
+.input_box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    font-size: 1em;
+    font-weight: 300;
+    color: #000;
+    padding: 0 100px 0 5px;
+    cursor: text;
+}
+
+.input_box .icon{
+    position: absolute;
+    right: 8px;
+    font-size: 1.2em;
+    color: #000;
+    line-height: 50px;
+}
+
+.remember-forgot{
+    font-size: 0.9em;
+    color: #000;
+    margin: -15px 0 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.confirm{
+    padding-left: 5px;
+}
+
+.remember-forgot label input{
+    accent-color: #ff7d01;
+    margin-right: 3px;
+}
+
+.remember-forgot a{
+    text-decoration: none;
+    color: #000;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+
+.loginBtn, .registerBtn, .resetBtn{
+    width: 100%;
+    height: 5vh;
+    background-color: #ff7d01;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1em;
+    color: #000;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.loginBtn:hover, .registerBtn:hover, .resetBtn:hover{
+    scale: 1.05;
+}
+
+.login-register{
+    font-size: 0.9em;
+    color: #000;
+    text-align: center;
+    font-weight: 500;
+    margin: 25px 0 10px;
+}
+
+.login-register p a{
+    color: #000;
+    text-decoration: none;
+    font-weight: 600;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.login-register p a:hover{
+    text-decoration: underline;
+}
+
+.input_box select{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    /* padding: 0 100px 0 5px; */
+    width: 85%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    transform: translateY(-50%);
+    font-size: 1em;
+    color: #000;
+    font-weight: 300;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.input_box select:focus + label, 
+.input_box select:valid + label{
+    top: -1px;
+}
+
+.remember-forgot .registerAgree{
+    margin-top: 10px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
