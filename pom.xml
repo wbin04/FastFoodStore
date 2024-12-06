@@ -107,22 +107,22 @@
 <dependency>
             <groupId>org.apache.tomcat.embed</groupId>
             <artifactId>tomcat-embed-core</artifactId>
-            <version>9.0.89</version>
+            <version>9.0.93</version>
           </dependency>
           <dependency>
             <groupId>org.apache.tomcat</groupId>
             <artifactId>tomcat-util</artifactId>
-            <version>9.0.89</version>
+            <version>9.0.93</version>
           </dependency>
           <dependency>
             <groupId>org.apache.tomcat</groupId>
             <artifactId>tomcat-coyote</artifactId>
-            <version>9.0.89</version>
+            <version>9.0.93</version>
           </dependency>
           <dependency>
             <groupId>org.apache.tomcat</groupId>
             <artifactId>tomcat-api</artifactId>
-            <version>9.0.89</version>
+            <version>9.0.93</version>
           </dependency>
 
 
@@ -131,7 +131,7 @@
           <dependency>
             <groupId>org.apache.tomcat</groupId>
             <artifactId>tomcat-jdbc</artifactId>
-            <version>9.0.89</version>
+            <version>9.0.93</version>
           </dependency>
 
 
@@ -140,7 +140,7 @@
           <dependency>
             <groupId>org.apache.tomcat</groupId>
             <artifactId>tomcat-dbcp</artifactId>
-            <version>9.0.89</version>
+            <version>9.0.93</version>
           </dependency>
 
 
@@ -149,7 +149,7 @@
           <dependency>
             <groupId>org.apache.tomcat</groupId>
             <artifactId>tomcat-servlet-api</artifactId>
-            <version>9.0.89</version>
+            <version>9.0.93</version>
           </dependency>
 
 
@@ -158,7 +158,7 @@
           <dependency>
             <groupId>org.apache.tomcat</groupId>
             <artifactId>tomcat-jsp-api</artifactId>
-            <version>9.0.89</version>
+            <version>9.0.93</version>
           </dependency>
 
 
@@ -167,7 +167,7 @@
           <dependency>
             <groupId>org.apache.tomcat</groupId>
             <artifactId>tomcat-jasper</artifactId>
-            <version>9.0.89</version>
+            <version>9.0.93</version>
           </dependency>
 
 
@@ -176,7 +176,7 @@
           <dependency>
             <groupId>org.apache.tomcat</groupId>
             <artifactId>tomcat-jasper-el</artifactId>
-            <version>9.0.89</version>
+            <version>9.0.93</version>
           </dependency>
 
 
@@ -185,7 +185,7 @@
           <dependency>
             <groupId>org.apache.tomcat</groupId>
             <artifactId>tomcat-el-api</artifactId>
-            <version>9.0.89</version>
+            <version>9.0.93</version>
           </dependency>
 
 
@@ -194,7 +194,7 @@
           <dependency>
             <groupId>org.apache.tomcat</groupId>
             <artifactId>tomcat-catalina</artifactId>
-            <version>9.0.89</version>
+            <version>9.0.93</version>
           </dependency>
 
 
@@ -203,7 +203,7 @@
           <dependency>
             <groupId>org.apache.tomcat</groupId>
             <artifactId>tomcat-tribes</artifactId>
-            <version>9.0.89</version>
+            <version>9.0.93</version>
           </dependency>
 
 
@@ -212,7 +212,7 @@
           <dependency>
             <groupId>org.apache.tomcat</groupId>
             <artifactId>tomcat-catalina-ha</artifactId>
-            <version>9.0.89</version>
+            <version>9.0.93</version>
           </dependency>
 
 
@@ -221,7 +221,7 @@
           <dependency>
             <groupId>org.apache.tomcat</groupId>
             <artifactId>tomcat-annotations-api</artifactId>
-            <version>9.0.89</version>
+            <version>9.0.93</version>
           </dependency>
 
 
@@ -230,7 +230,7 @@
           <dependency>
             <groupId>org.apache.tomcat</groupId>
             <artifactId>tomcat-juli</artifactId>
-            <version>9.0.89</version>
+            <version>9.0.93</version>
           </dependency>
 
 
@@ -239,12 +239,12 @@
           <!-- <dependency>
             <groupId>org.apache.tomcat.embed</groupId>
             <artifactId>tomcat-embed-logging-juli</artifactId>
-            <version>9.0.89</version>
+            <version>9.0.93</version>
           </dependency>
           <dependency>
             <groupId>org.apache.tomcat.embed</groupId>
             <artifactId>tomcat-embed-logging-log4j</artifactId>
-            <version>9.0.89</version>
+            <version>9.0.93</version>
           </dependency> -->
 
 
